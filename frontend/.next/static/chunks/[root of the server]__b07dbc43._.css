@@ -693,24 +693,12 @@
     max-height: 85vh;
   }
 
-  .max-h-\[90vh\] {
-    max-height: 90vh;
-  }
-
   .max-h-\[440px\] {
     max-height: 440px;
   }
 
   .max-h-\[560px\] {
     max-height: 560px;
-  }
-
-  .max-h-\[calc\(100vh-260px\)\] {
-    max-height: calc(100vh - 260px);
-  }
-
-  .max-h-\[calc\(100vh-280px\)\] {
-    max-height: calc(100vh - 280px);
   }
 
   .max-h-\[calc\(100vh-290px\)\] {

@@ -233,9 +233,9 @@ export default function SearchPage() {
   };
 
   return (
-    <div className="w-full h-screen bg-gray-100 flex flex-col items-center p-4">
+    <div className="w-full h-screen bg-gray-100 flex flex-col items-center p-4 text-black">
       <h1 className="text-xl font-bold mb-4">Tìm kiếm</h1>
-      <div className="max-w-xl w-full h-auto">
+      <div className="max-w-xl w-full h-auto text-black">
         <div className="bg-white rounded-2xl shadow-md p-4 space-y-4">
           {/* Search input */}
           <div className="relative">

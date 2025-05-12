@@ -398,7 +398,7 @@ export default function CommentPage() {
   };
 
   return (
-    <div className="w-full h-screen bg-gray-100 flex flex-col items-center p-4">
+    <div className="w-full h-screen bg-gray-100 flex flex-col items-center p-4 text-black">
       <div className="min-w-xl flex items-center justify-between gap-4 mb-4">
         <ArrowLeftIcon size={24} className="cursor-pointer" onClick={() => window.history.back()} />
         <h1 className="text-xl font-bold mb-4">Bình luận</h1>

@@ -289,7 +289,7 @@ export default function ProfilePage() {
     };
 
     return (
-      <div key={post.post_id} className="bg-white text-black p-4 shadow-md w-full rounded-lg border ">
+      <div key={post.post_id} className="bg-white text-black p-4 shadow-md w-full rounded-lg border text-black">
         <div className="flex items-center space-x-3">
           <img src={user?.avatar ? `http://127.0.0.1:8000/media/${user.avatar}` : "https://placehold.co/40x40"} alt="Avatar" className="w-10 h-10 rounded-full" />
           <div>
@@ -516,7 +516,7 @@ export default function ProfilePage() {
   }
 
   return (
-    <div className="w-full h-screen bg-gray-100 flex flex-col items-center p-4">
+    <div className="w-full h-screen bg-gray-100 flex flex-col items-center p-4 text-black">
       <h1 className="text-xl font-bold mb-4">Hồ sơ</h1>
       <div className="max-w-xl w-full h-auto">
         <div className="bg-white rounded-2xl shadow-md p-4 space-y-4">
