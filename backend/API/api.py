@@ -37,13 +37,6 @@ class UserUpdate(BaseModel):
     username: str
     email: str
     bio: str
-# create separate user
-# class Userlogin(BaseModel):
-#     phone_number: optional[str]
-#     email: optional[str]
-#     username: optional[str]
-#     password: optional[str]
-
 # ------------------------
 # Auth Endpoints
 # ------------------------
@@ -72,16 +65,6 @@ def login(user: User):
     if not user:
         raise HTTPException(status_code=400, detail="User not found",)
     return {"message": "User logged in", "token": create_access_token({"user_id": user["user_id"]})}
-
-
-# @app.post("/logout")
-# def logout(token: str = Query(...)):
-#     Manager.logout(token)
-#     return {"message": "User logged out"}
-
-# ------------------------
-# Post Endpoints
-# ------------------------
 
 class CustomJSONEncoder(json.JSONEncoder):
     def default(self, obj):
@@ -417,10 +400,3 @@ async def update_user(
         
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Lỗi khi cập nhật thông tin: {str(e)}")
-# ------------------------
-# Notification
-# ------------------------
-
-# @app.get("/notifications")
-# def get_notifications(user_id: str):
-#     return {"user_id": user_id, "notifications": []}
